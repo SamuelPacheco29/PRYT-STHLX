@@ -10,19 +10,19 @@
 body {
     padding: 0;
     margin: 0;
+    font-family: sans-serif;
 }
 
 header {
     display: flex;
     position: static;
     width: 100%;
-    transition: 0.7s;
     padding: 10px 30px;
     align-items: center;
     background-color: #f9f6f2;
     justify-content: space-between;
     border-bottom: solid 2px #e6e5e1;
-    font-family: "Open Sans", sans-serif;
+    font-family: sans-serif;
     box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
 }
 
@@ -59,21 +59,62 @@ header {
     transform: scale(1.1);
 }
 
+
+
+#imagen-fondo {
+    max-width: 80%;
+}
+
+#principal {
+    width: 100%;
+    height: 100vh; /* La sección ocupa toda la pantalla */
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f6f2;
+    margin: 0 auto;
+}
+
+#principal img {
+    display: flex;
+    width: 50%;
+
+}
+
+#contenido-principal {
+    display: flex;
+    margin-top: -60px;
+    padding: 10px;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Open Sans", sans-serif;
+    width: 60%;
+    font-size: 30px;
+}
+
+#principal .dcp-principal {
+    color: #828281;
+    font-size: 25px;
+}
+
+
 @media (max-width: 750px) {
     
     header {
+        align-items: center;
         flex-direction: column;
     }
 
     #lista-menus {
+        max-width: 100%;
         justify-content: center;
         margin-top: 5px;
         margin-left: 20px;
     }
 
     #principal img {
-        margin-top: -150px;
-    
+        width: 100%;
     }
 
     #principal {
@@ -90,41 +131,3 @@ header {
     }
 
 }
-
-#imagen-fondo {
-    max-width: 50%;
-}
-
-#principal {
-    width: 100%;
-    height: 100vh; /* La sección ocupa toda la pantalla */
-    display: flex;
-    text-align: center;
-    justify-content: center;
-    align-items: center;
-    background-color: #f9f6f2;
-    margin-right: 30px;
-}
-
-#principal img {
-    display: flex;
-    max-width: 70%;
-
-}
-
-#contenido-principal {
-    display: flex;
-    margin-top: -100px;
-    align-items: center;
-    flex-direction: column;
-    font-family: "Open Sans", sans-serif;
-    max-width: 60%;
-    font-size: 30px;
-}
-
-#principal .dcp-principal {
-    color: #828281;
-    font-size: 25px;
-}
-
-
