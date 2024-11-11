@@ -1,40 +1,47 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Samath Luxe</title>
-    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Encabezado fijo -->
     <header>
-        <div id="logo-header">
-            <a href=""><img src="logo-samathluxe.png" alt="Logotipo Cabecera Nike"></a>
-            <h2>SAMATH LUXE</h2>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html"><img src="logo-samathluxe.png" alt="Samath Luxe Logo" height="50"></a>
+                <a href="index.html"><h1>SAMATH LUXE</h1></a>
+            </div>
+            <nav>
+                <a href="#inicio">Inicio</a>
+                <a href="#servicios">Servicios</a>
+                <a href="#nosotros">Nosotros</a>
+                <a href="#coleccion">Colección</a>
+            </nav>
         </div>
-        <nav id="lista-menus">
-            <a href="" class="lista-menu">Inicio</a>
-            <a href="" class="lista-menu">Servicios</a>
-            <a href="" class="lista-menu">Nosotros</a>
-            <a href="" class="lista-menu">Coleccion</a>
-        </nav>
     </header>
+
+    <!-- Contenido principal -->
     <main>
-        <section id="principal">
-            <img id="imagen-fondo" src="TERCERLANZAMIENTOOCTUBRE-091_550x-removebg-preview.png" alt="fondo-anillo">
-            <div id="contenido-principal">
-                <h1>REFLEJA TU ESENCIA</h1>
-                <p class="dcp-principal">Descubre la colección de accesorios de Samath Luxe. Donde la elegancia se encuentra con el estilo.</p>
+        <div class="hero">
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-image">
+                        <img src="TERCERLANZAMIENTOOCTUBRE-091_550x.png" alt="Anillo de hojas dorado">
+                    </div>
+                    <div class="hero-text">
+                        <h2>REFLEJA TU <span>ESENCIA</span></h2>
+                        <p>Descubre la colección de accesorios de Samath Luxe. Donde la elegancia se encuentra con el estilo.</p>
+                        <button>Explorar Colección</button>
+                    </div>
+                </div>
             </div>
-        </section>
-        <!-- <section id="coleccion">
-            <h1>Nuestra Coleccion</h1>
-            <div>
-
-            </div>
-
-        </section> -->
-        
+        </div>
     </main>
+
+    <!-- Gradiente decorativo en la parte inferior -->
+    <div class="bottom-gradient"></div>
 </body>
 </html>
