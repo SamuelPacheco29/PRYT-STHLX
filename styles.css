@@ -1,0 +1,130 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+header {
+    display: flex;
+    position: static;
+    width: 100%;
+    transition: 0.7s;
+    padding: 10px 30px;
+    align-items: center;
+    background-color: #f9f6f2;
+    justify-content: space-between;
+    border-bottom: solid 2px #e6e5e1;
+    font-family: "Open Sans", sans-serif;
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.4);
+}
+
+#logo-header {
+    display: flex;
+    align-items: center;
+    color: #603613;
+    font-size: 15px;
+}
+
+#logo-header img {
+    max-height: 70px;
+}
+
+
+/* Menu */
+#lista-menus {
+    display: flex;
+    align-items: center;
+    font-family: "Open Sans", sans-serif;
+}
+
+.lista-menu {
+    display: flex;
+    font-size: 18px;
+    padding-right: 29px;
+    text-decoration: none;
+    color: #1b0e02df;
+    transition: transform 0.3s ease, color 0.3s ease; 
+}
+
+.lista-menu:hover {
+    color: #5d3417;
+    transform: scale(1.1);
+}
+
+@media (max-width: 750px) {
+    
+    header {
+        flex-direction: column;
+    }
+
+    #lista-menus {
+        justify-content: center;
+        margin-top: 5px;
+        margin-left: 20px;
+    }
+
+    #principal img {
+        margin-top: -150px;
+    
+    }
+
+    #principal {
+        flex-direction: column;
+    }
+
+    #contenido-principal {
+        max-width: 100%;
+        margin-top: 50px;
+    }
+
+    #principal .dcp-principal {
+        width: 100%;
+    }
+
+}
+
+#imagen-fondo {
+    max-width: 50%;
+}
+
+#principal {
+    width: 100%;
+    height: 100vh; /* La sección ocupa toda la pantalla */
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f6f2;
+    margin-right: 30px;
+}
+
+#principal img {
+    display: flex;
+    max-width: 70%;
+
+}
+
+#contenido-principal {
+    display: flex;
+    margin-top: -100px;
+    align-items: center;
+    flex-direction: column;
+    font-family: "Open Sans", sans-serif;
+    max-width: 60%;
+    font-size: 30px;
+}
+
+#principal .dcp-principal {
+    color: #828281;
+    font-size: 25px;
+}
+
+
